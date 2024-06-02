@@ -1,0 +1,37 @@
+#MoneyBack {
+    background-color: rgb(255, 160, 122);
+    text-align: center;
+    margin: 0;
+
+    .title {
+
+        h2 {
+            word-break: break-word;
+            font-size: 32px;
+            color: rgb(0, 0, 0);
+            font-family: Cairo;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+
+            @media (max-width:768px) {
+                font-size: 28px;
+                font-family: Cairo;
+                text-align: center;
+                line-height: 40px;
+            }
+        }
+
+    }
+
+    p {
+        word-break: break-word;
+        font-size: 21px;
+        color: rgb(0, 0, 0);
+        font-weight: 500;
+        font-style: normal;
+        text-align: right;
+    }
+
+
+}

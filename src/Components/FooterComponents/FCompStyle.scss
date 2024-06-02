@@ -1,0 +1,46 @@
+#RefundPolicy {
+    .text {
+        text-align: right;
+
+        h3 {
+            font-size: 32px;
+            color: rgb(79, 80, 86);
+            font-family: Cairo;
+            font-weight: 400;
+            font-style: normal;
+            text-align: right;
+            line-height: 41px;
+        }
+
+        p {
+            font-size: 23px;
+            color: rgb(79, 80, 86);
+            font-family: Cairo;
+            font-weight: 500;
+            font-style: normal;
+            text-align: right;
+            line-height: 43px;
+
+            span {
+                color: rgba(208, 2, 27, 1);
+            }
+        }
+
+    }
+
+
+    .img {
+        position: relative;
+
+        img {
+            width: 350px;
+        }
+
+    }
+
+    .RefundPolicy {
+        direction: ltr;
+        margin-top: 100px;
+    }
+
+}

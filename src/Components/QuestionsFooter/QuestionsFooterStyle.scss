@@ -1,0 +1,149 @@
+#QuestionsFooter {
+    position: relative;
+    overflow: hidden;
+    background-image: url("../../assets/BG-17-min-1.webp");
+    background-position: center;
+    background-size: cover;
+
+    .wrapper {
+        width: 900px;
+        background-color: #f3f3f30d;
+
+        @media (max-width: 768px) {
+            width: auto;
+        }
+
+        @media (max-width: 1024px) {
+            width: 800px;
+        }
+    }
+
+    .title {
+        h2 {
+            font-size: 31px;
+            color: white;
+            font-family: Cairo;
+            font-weight: bold;
+            font-style: normal;
+            text-align: center;
+        }
+
+        p {
+            font-size: 29px;
+            color: white;
+            text-align: center;
+            color: #e52124;
+        }
+    }
+
+    .Qaccordion {
+
+        img {
+            filter: saturate(0.6);
+        }
+
+        span {
+            font-size: 18px;
+            color: rgb(9, 39, 125);
+            font-family: Cairo;
+            font-weight: 700;
+            font-style: normal;
+            cursor: pointer;
+
+            @media (max-width: 767px) {
+                font-size: 16px;
+            }
+        }
+
+        .Answer {
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+    }
+
+
+
+
+    .accordion{
+        width: 100%;
+        background: #fff;
+        color: #000;
+        background-color: #fff;
+        color: #111;
+        margin: 1rem 0;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+    }
+
+
+    
+    .accordion-tab > .accordion-toggle{
+        position: absolute;
+        display: none;
+    }
+    
+    .accordion-tab > label{
+        padding: 0.5rem 1rem 0.5rem 2rem;
+        font-size: 20px;
+        min-height: 3.5rem;
+        line-height: 1.25rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+    
+    .accordion-tab > .accordion-content{
+        max-height: 0;
+        padding: 0 10px;
+        transition: all .2s;
+        overflow: hidden;
+    }
+    
+    .accordion-tab > label:after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        // background-color: rgb(0, 0, 0);
+        background-image: url("../../assets/down-arrow (1).png");
+        filter: saturate(0.7);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 10px;
+        transition: all 0.3s linear;
+    }
+
+
+    .accordion.dir-ltr {
+
+        .accordion-tab > label {
+            padding: 0.5rem 2rem 0.5rem 5px;
+        }
+
+
+        .accordion-tab > label:after {
+            left: auto;
+            right: 10px;
+        }
+    }
+    
+    .accordion-tab > .accordion-toggle:checked ~ label:after{
+        transform: rotate(-180deg) ;
+    }
+
+
+    
+    .accordion-tab > .accordion-toggle:checked ~ .accordion-content{
+        max-height: 100vh;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    
+
+}

@@ -1,0 +1,76 @@
+#Samples {
+
+
+
+    .title {
+        text-align: center;
+
+        h2 {
+            font-size: 41px;
+            font-family: Cairo;
+            font-weight: 600;
+            font-style: normal;
+            text-align: center;
+            line-height: 57px;
+
+            @media (max-width:768px) {
+                font-size: 28px;
+                font-family: Cairo;
+                text-align: center;
+                line-height: 40px;
+            }
+        }
+
+    }
+
+    .videoSample {
+        video {
+            height: 290px;
+        }
+    }
+
+    .text {
+        h3 {
+            word-break: break-word;
+            font-size: 32px;
+            font-weight: bold;
+            font-style: normal;
+            text-align: center;
+            line-height: 38.4px;
+        }
+
+        p.F {
+            word-break: break-word;
+            transition: box-shadow 0.1s ease-in-out 0s;
+            font-size: 20px;
+            color: rgba(3, 33, 121, 1);
+            font-family: Cairo;
+            text-align: center;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        p.S {
+            word-break: break-word;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            width: 450px;
+
+            @media (max-width: 992px) {
+                width: auto;
+            }
+        }
+    }
+
+
+
+    .pFooter {
+        word-break: break-word;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-weight: bold;
+        line-height: 26px;
+    }
+}

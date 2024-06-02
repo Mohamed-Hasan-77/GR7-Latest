@@ -1,0 +1,134 @@
+.Transformation {
+
+    padding: 40px 0 50px;
+    background-color: white;
+    overflow: hidden;
+
+
+    .secTitle {
+
+        h2 {
+            font-size: 38px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 19px;
+            font-weight: 700;
+        }
+
+
+
+
+    }
+
+    .slick-list {
+        overflow: visible;
+    }
+
+
+    .sliderOBox {
+
+        .sliderInnerBox {
+
+            transition: all 0.5s ease-in-out;
+            border-radius: 40px;
+            cursor: grab;
+
+
+            .img {
+
+                img {
+                    height: 300px;
+                }
+
+                .before {
+                    filter: grayscale(1);
+                }
+
+                .overlayImg {
+                    // background: linear-gradient(6deg, rgba(31, 84, 181, 0.41220238095238093) 0%, rgba(31, 84, 181, 0.4458158263305322) 32%, rgba(31, 84, 181, 0.3393732492997199) 100%, rgba(249, 249, 249, 1) 100%, rgba(252, 252, 252, 0) 100%, rgba(31, 84, 181, 0.3897934173669467) 100%);
+                    background-color: rgba(221, 0, 0, 0.103);
+                }
+
+
+            }
+
+
+            .overCover {
+                font-size: 20px;
+                color: white;
+                text-align: right;
+                padding: 20px;
+                width: 100%;
+                height: 100%;
+                transition: all 0.3s ease-in-out;
+                z-index: 55;
+
+                h3 {
+                    font-weight: bold;
+                    text-align: center;
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }
+
+            &:hover {
+                .overCover {
+                    opacity: 1;
+                    background-color: rgba(0, 0, 0, 0.511);
+
+                }
+
+                .after {
+                    filter: blur(2px);
+                }
+
+                .before {
+                    filter: blur(2px) grayscale(1);
+                }
+
+            }
+
+        }
+
+
+        .beforeText, .AfterText {
+            background-color: #1f54b57d;
+            backdrop-filter: blur(2px);
+            width: 99px;
+            border: 2px solid;
+            height: 35px;
+            border-radius: 10px 40px;
+            bottom: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+
+}
+
+.slick-dots li {
+    @media (max-width: 768px) {
+        margin-right: 0 ;
+        margin-left: 0 ;
+    }
+    
+}
+
+.slick-dots li button:before {
+    content: "";
+    background: #2c59de;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}

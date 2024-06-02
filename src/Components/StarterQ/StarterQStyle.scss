@@ -1,0 +1,232 @@
+#StarterQ {
+    height: 100vh;
+    background-image: url("../../assets/Mask-group-16-1.webp");
+    background-position: center;
+    background-size: cover;
+
+
+    .QBox {
+        width: 900px;
+        // height: 600px;
+        direction: rtl;
+
+        @media (max-width: 768px) {
+            width: auto;
+        }
+
+        @media (max-width: 1024px) {
+            width: 800px;
+        }
+    }
+
+
+    .slide {
+        margin-top: 50px;
+        padding: 15px;
+
+        @media (max-width: 767px) {
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 34px;
+
+            @media (max-width: 767px) {
+                font-size: 26px;
+            }
+
+            @media (max-width: 320px) {
+                font-size: 16px;
+            }
+        }
+
+
+        .continue {
+            button {
+                background: rgb(31 84 181);
+                padding: 10px 20px;
+                position: relative;
+                cursor: pointer;
+                overflow: hidden;
+                color: white;
+
+
+                @media (max-width: 767px) {
+                    font-size: 22px;
+                }
+
+                @media (max-width: 320px) {
+                    font-size: 13px;
+                }
+
+            }
+
+            span {
+                z-index: 3;
+                position: relative;
+            }
+
+            button::before {
+                content: '';
+                position: absolute;
+                transform-origin: center;
+                top: 0;
+                bottom: 0;
+                right: 100%;
+                left: 0;
+                background: rgb(21, 62, 139);
+                opacity: 0;
+                z-index: 1;
+                transition: all 0.3s;
+            }
+
+            button:hover {
+                color: #fff;
+            }
+
+            button:hover::before {
+                left: 0;
+                right: 0;
+                opacity: 1;
+            }
+        }
+    }
+
+
+
+
+
+
+    .checkbox-wrapper input {
+        // visibility: hidden;
+        // display: none;
+    }
+
+    .checkbox-wrapper *,
+    .checkbox-wrapper ::after,
+    .checkbox-wrapper ::before {
+        box-sizing: border-box;
+        user-select: none;
+    }
+
+    .checkbox-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .checkbox-wrapper .label {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-size: 26px;
+        width: 100%;
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 320px) {
+            font-size: 12px;
+        }
+    }
+
+    .checkbox-wrapper .label.wrong {
+        color: #ff4d4f;
+        background-color: #ff4d5011;
+    }
+
+
+    .checkbox-wrapper .check {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        opacity: 0;
+
+
+        @media (max-width: 767px) {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .checkbox-wrapper .label svg {
+        vertical-align: middle;
+    }
+
+    .checkbox-wrapper .path1 {
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400;
+        transition: .3s stroke-dashoffset;
+        opacity: 0;
+    }
+
+    .checkbox-wrapper .check:checked+label svg g path {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+
+
+
+
+
+    .SixthSlide {
+        direction: rtl;
+
+        .formField {
+            margin: 10px;
+            position: relative;
+        }
+
+        .formField input {
+            padding: 20px 110px 10px 15px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            background-color: #f1f1f1;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+            box-shadow: 0 0 0 5px transparent;
+            width: 100%;
+            overflow: hidden;
+            direction: ltr;
+        }
+
+        .formField input:hover,
+        .formField input:focus {
+            box-shadow: 0 0 0 2px #333;
+        }
+
+        .formField span {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 13px 15px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+            pointer-events: none;
+            z-index: 999;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .formField .first {
+            height: 100%;
+            width: 100px;
+            z-index: 1;
+            background-color: #333;
+        }
+
+        .formField input:focus+span {
+            transform: scale(1.1);
+            transition: 0.3s ease-in-out;
+        }
+    }
+
+
+
+
+
+}

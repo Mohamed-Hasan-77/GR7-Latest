@@ -1,0 +1,109 @@
+#WhyUs {
+
+
+    .title {
+        text-align: center;
+
+        h2 {
+            word-break: break-word;
+            font-size: 48px;
+            font-weight: bold;
+            font-style: normal;
+            line-height: 76px;
+
+            @media (max-width:768px) {
+                font-size: 34px;
+                line-height: 31px;
+                font-weight: bold;
+            }
+        }
+
+        p {
+            margin-top: 25px;
+            word-break: break-word;
+            font-size: 17px;
+            color: rgb(0, 0, 0);
+            font-family: Cairo;
+            font-weight: 500;
+            font-style: normal;
+            text-align: center;
+        }
+    }
+
+    .wrapperBox {
+        .box {
+            // background-color: #121212;
+            background-color: #ebebeb;
+            min-height: 200px;
+            color: rgb(0, 0, 0);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+
+
+            @media (max-width:1023px) {
+                min-height: 220px;
+            }
+
+            @media (max-width:767px) {
+                min-height: auto;
+            }
+
+            .img {
+                img {
+                    width: 60px;
+                    padding: 7px;
+                    border-radius: 9px;
+                    // background-color: #e52124;
+                    background-color: #1f54b5;
+                    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+
+                }
+            }
+
+
+            h3 {
+                font-size: 24px;
+                font-family: Cairo;
+                font-weight: bold;
+                transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+
+
+                @media (max-width:992px) {
+                    font-size: 24px;
+                }
+
+            }
+
+            p {
+                font-size: 16px;
+                font-family: Cairo;
+                font-weight: 600;
+
+                @media (max-width:992px) {
+                    font-size: 16px;
+                }
+            }
+
+
+            &:hover {
+                transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+                box-shadow: 0 10px 20px rgb(0 0 0 / 32%);
+
+                .img {
+                    img {
+                        // background-color: #ff5100;
+                        background-color: #e52124;
+                    }
+                }
+
+
+            }
+
+        }
+
+
+    }
+
+
+
+
+}

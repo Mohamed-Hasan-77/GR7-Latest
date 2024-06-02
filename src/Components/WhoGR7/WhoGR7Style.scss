@@ -1,0 +1,79 @@
+#WhoGR7 {
+
+
+    .title {
+        h2 {
+            word-break: break-word;
+            font-size: 48px;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 72px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 7px;
+            font-weight: 600;
+            font-style: normal;
+            line-height: 31px;
+        }
+    }
+
+    .titleTwo {
+        h2 {
+            word-break: break-word;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: normal;
+            line-height: 38.4px;
+        }
+
+        p {
+            word-break: break-word;
+            margin-top: 15px;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+    }
+
+
+    .wrapperBox {
+        .box {
+            font-size: 20px;
+            font-weight: bold;
+            font-style: normal;
+            text-align: center;
+            line-height: 23px;
+            min-height: 280px;
+
+        
+
+            @media (max-width: 768px) {
+                min-height: 250px;
+            }
+
+            h4 {
+                padding:  0px 3px 10px;
+            }
+
+            img {
+                transition: all 0.3s ease-in-out;
+                }
+                svg {
+                    height: 180px !important;
+                }
+
+            &:hover {
+                    img {
+                        transform: scale(1.03)  translate(0,-7px);
+                    }
+        }
+        }
+
+    }
+
+
+
+
+
+}

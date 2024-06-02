@@ -1,0 +1,105 @@
+#trainingProgram {
+    position: relative;
+    overflow: hidden;
+    background-image: url("../../assets/Mask-group-12-1.png");
+    background-position: center;
+    background-size: cover;
+    // background-color: #0d0d0d;
+
+    .title {
+        text-align: center;
+
+        h2 {
+            font-size: 48px;
+            font-weight: bold;
+            font-style: normal;
+            line-height: 76px;
+
+            @media (max-width:768px) {
+                font-size: 30px;
+                line-height: 35px;
+            }
+        }
+
+        p {
+            margin-top: 25px;
+            word-break: break-word;
+            font-size: 17px;
+            color: rgb(0, 0, 0);
+            font-family: Cairo;
+            font-weight: 500;
+            font-style: normal;
+            text-align: center;
+        }
+    }
+
+    .wrapperBox {
+        .box {
+            background-color: #161616;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+            min-height: 450px;
+            background-color: #dddddd17;
+            backdrop-filter: blur(15px);
+
+            @media (max-width:1285px) {
+                min-height: 500px;
+            }
+
+
+            @media (max-width:992px) {
+                min-height: 445px;
+            }
+            @media (max-width:767px) {
+                min-height: auto;
+            }
+
+            @media (max-width:767px) {
+                margin-top: 30px;
+            }
+
+            h3 {
+                font-size: 28px;
+                font-family: Cairo;
+                font-weight: bold;
+                color: white;
+
+                @media (max-width:1285px) {
+                    font-size: 24px;
+                }
+
+            }
+
+            p {
+                font-size: 18px;
+                font-family: Cairo;
+                font-weight: 600;
+                color: #b5b5b5;
+
+                @media (max-width:992px) {
+                    font-size: 16px;
+                }
+            }
+
+            img {
+                transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+            }
+
+
+            &:hover {
+                box-shadow: 0 10px 20px rgb(0, 0, 0);
+
+                img {
+                    filter: saturate(1.5);
+                }
+
+            }
+
+        }
+
+
+    }
+
+
+
+
+}

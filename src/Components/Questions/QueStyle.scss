@@ -1,0 +1,83 @@
+#Questions {
+
+    .title {
+        h2 {
+            word-break: break-word;
+            font-size: 32px;
+            font-weight: 700;
+            font-style: normal;
+            text-align: center;
+            line-height: 38.4px;
+        }
+    }
+
+    .titleTwo {
+        h2 {
+            word-break: break-word;
+            font-size: 24px;
+            font-weight: 700;
+            font-style: normal;
+            text-align: center;
+            line-height: 38.4px;
+
+            @media (max-width: 767px) {
+                font-size: 20px;
+
+            }
+        }
+
+        .celebrate {
+            svg {
+                height: 70px !important;
+                margin-top: -10px;
+            }
+        }
+    }
+
+
+    .QBoxes {
+        ul {
+            li {
+                margin: 15px 20px;
+                position: relative;
+                font-size: 18px;
+                font-weight: bold;
+
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    right: -25px;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url("../../assets/arrow.webp");
+                    transform: rotateY(180deg);
+                }
+            }
+
+        }
+    }
+
+    .container.dir-ltr {
+        .QBoxes {
+            ul {
+                li {
+    
+    
+                    &::before {
+                        right: auto;
+                        left: -25px;
+                        transform: rotateY(0deg);
+                    }
+                }
+    
+            }
+        }
+    }
+
+
+
+}

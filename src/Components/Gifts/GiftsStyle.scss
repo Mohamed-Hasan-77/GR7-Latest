@@ -1,0 +1,99 @@
+#Gifts {
+
+    padding: 0px 0 50px;
+
+
+    .title {
+        h2 {
+            word-break: break-word;
+            font-size: 32px;
+            font-weight: 700;
+            font-style: normal;
+            text-align: center;
+            line-height: 38.4px;
+        }
+
+        p {
+
+            font-size: 20px;
+            color: #242424;
+            font-family: Cairo;
+            text-align: center;
+            line-height: 26px;
+        }
+    }
+
+
+    .text {
+
+        h3 {
+            font-size: 32px;
+            color: #242424;
+            font-family: Cairo;
+            font-weight: 400;
+            font-style: normal;
+  
+        }
+
+        h4 {
+            font-size: 21px;
+            color: rgba(9, 39, 125, 1);
+            font-family: Cairo;
+            font-weight: 700;
+
+
+        }
+
+        p {
+            font-size: 14px;
+            color: #242424;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+    }
+
+    .img {
+        position: relative;
+
+        img {
+            width: 350px;
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+
+    }
+    
+
+
+    .giftBox {
+        h3 {
+            font-size: 18px;
+            color: #242424;
+            font-weight: 800;
+        }
+
+
+        p {
+            font-size: 16px;
+            color: #242424;
+            font-weight: 600;
+        }
+
+        .Aprice {
+            font-size: 19px;
+            color: rgba(9, 39, 125, 1);
+            font-weight: bold;
+        }
+
+        .Dprice {
+            font-size: 22px;
+            font-weight: bold;
+            color: red;
+        }
+    }
+
+
+}

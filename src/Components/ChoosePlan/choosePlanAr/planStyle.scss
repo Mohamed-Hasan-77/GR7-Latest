@@ -1,0 +1,158 @@
+.ChoosePlan {
+
+
+
+    .title {
+        text-align: center;
+
+        h2 {
+            word-break: break-word;
+            font-size: 42px;
+            font-weight: bold;
+            font-style: normal;
+            line-height: 76px;
+
+            @media (max-width:768px) {
+                font-size: 24px;
+                line-height: 31px;
+            }
+        }
+    }
+
+    .wrapperBox {
+
+        .box {
+            background-color: white;
+            min-height: 1250px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+
+
+            @media (max-width:1280px) {
+                min-height: auto;
+            }
+
+            &:hover {
+                box-shadow: 0 10px 20px rgb(0 0 0 / 32%);
+
+            }
+
+            .boxTitle {
+
+                border-bottom: 2px solid #3c7dd9;
+                padding: 10px 3px;
+
+                svg {
+
+                    height: 200px !important;
+                    margin-top: -50px;
+                }
+
+                h3 {
+                    word-break: break-word;
+                    font-size: 24px;
+                    color: rgb(0, 0, 0);
+                    font-family: Cairo;
+                    font-weight: bold;
+                    font-style: normal;
+                    text-align: center;
+                    margin-top: -15px;
+
+                }
+
+                p {
+                    font-size: 15px;
+                }
+
+            }
+
+            ul {
+                li {
+                    margin: 15px;
+                    padding: 0 0 10px 0;
+                    position: relative;
+                    border-bottom: 2px solid #f5f6f7;
+                    font-size: 16px;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        right: -25px;
+                        top: 5px;
+                        width: 17px;
+                        height: 17px;
+                        background-image: url("../../../assets/check.png");
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+            }
+
+
+            .btn {
+                button {
+                    background: rgb(31 84 181);
+                    padding: 10px 20px;
+                    position: relative;
+                    cursor: pointer;
+                    overflow: hidden;
+                    color: white;
+
+                }
+
+                span {
+                    z-index: 3;
+                    position: relative;
+                }
+
+                button::before {
+                    content: '';
+                    position: absolute;
+                    transform-origin: center;
+                    top: 0;
+                    bottom: 0;
+                    right: 100%;
+                    left: 0;
+                    background: rgb(53, 110, 218);
+                    opacity: 0;
+                    z-index: 1;
+                    transition: all 0.5s;
+                }
+
+                button:hover {
+                    color: #fff;
+                }
+
+                button:hover::before {
+                    left: 0;
+                    right: 0;
+                    opacity: 1;
+                }
+            }
+
+        }
+
+
+
+        .pr0, .pr1 {
+            margin-top: 140px;
+
+            @media (max-width:1280px) {
+                margin-top: 0;
+            }
+
+        }
+
+    }
+
+    .active {
+        background-color: #3b82f6;
+
+    }
+
+
+
+
+
+
+
+}
